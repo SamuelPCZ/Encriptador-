@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-principal: #e7f2f7;
+    --color-boton1: #0A3871;
+    --color-boton2: #D8DFE8;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-principal);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 15vh;
+}
+
+.derecha, .izq {
+    margin: 10px;
+}
+
+#entrada {
+    display: block;
+    width: 57vh;
+    height: 20vh; 
+    font-size: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 0.5mm solid var(--color-principal);
+}
+
+#entrada::placeholder {
+    color: #0A3871;
+}
+
+#Encriptar, #Desencriptar {
+    border: solid 0.2mm var(--color-boton1);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 20vh;
+    cursor: pointer;
+}
+
+#Encriptar {
+    background-color: var(--color-boton1);
+    color: white;
+}
+
+#Desencriptar {
+    background-color: var(--color-boton2);
+    color: var(--color-boton1);
+    margin-left: 10px; /* Añadido para separar los botones */
+}
+
+#Encriptar:hover {
+    color: var(--color-boton1);
+    background-color: var(--color-boton2);
+}
+#Desencriptar:hover {
+    color: white;
+    background-color: var(--color-boton1);
+}
+
+.izq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+    border: 0.2mm solid var(--color-boton1); 
+    height: 50vh;
+    width: 50vh;
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+#Salida {
+    color: var(--color-boton1);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
